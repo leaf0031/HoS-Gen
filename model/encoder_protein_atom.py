@@ -120,7 +120,7 @@ class Pocket_encoder(torch.nn.Module):
 
         if self.pocket_surf:
             surface_features = []
-            surf_path = '/home/xxr/workspace/now/data/crossdocked_surface/'
+            surf_path = './surf/'
             for pocket_file, name in zip(data.pocket_path, data.pocket_name):
                 surf_file = os.path.join(surf_path, name.replace('.pdb', '.pkl'))
                 surf_data = None
@@ -154,7 +154,7 @@ class Pocket_encoder(torch.nn.Module):
         
         if self.pocket_elec:
             electrostatic_features = []
-            grid_path = '/home/xxr/workspace/now/data/crossdocked_elec/'
+            grid_path = './elec/'
             for pocket_file, name in zip(data.pocket_path, data.pocket_name):
                
                 grid_file = os.path.join(grid_path, name.replace('.pdb', '.pkl'))
