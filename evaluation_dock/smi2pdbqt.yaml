@@ -1,0 +1,6 @@
+dataset: crossdocked   # pdbbind  crossdocked
+pocket_path: ./data_crossdocked/test.yaml  
+smiles_yaml: ./save_rl_xiaorong/2026_05_16_23/sample_300_30_True_1_1_1088538616/    
+smiles_pdb: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/smiles_pdb/  
+smiles_pdbqt: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/smiles_pdbqt/
+error_list: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/

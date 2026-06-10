@@ -1,0 +1,18 @@
+pretrain: true # true # false # Whether to use pretraining
+pretrained_model: pretrain_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/pdbbind/char/2024_12_27_19/val_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/crossdocked/char/2024_12_26_20/val_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/crossdocked/char/2024_12_26_20/val_model.pt
+vocab_size: 48 # 54 # 48 # 48 # Vocabulary size char: 54, 48 selfies: 109
+block_size: 121 # 121 #119
+n_embd: 256
+num_props: 1 # Whether to include protein pocket information 1,0
+n_layer: 8 # Number of GPT blocks
+n_head: 8
+embd_pdrop: 0.1 # GPT input embedding parameter
+attn_pdrop: 0.1 # GPT attention weight parameter
+resid_pdrop: 0.1 # GPT residual dropout parameter
+sample: false # Whether to sample during generation true or false
+scaffold_maxlen: 0 # Length of scaffold molecules
+use_gate: true # true # true
+att_num: 1 # Only 1 and 2
+use_encoder_norm: false # false
+use_alpha: true # true
+resid_pdrop: 0.1

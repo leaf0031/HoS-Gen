@@ -1,0 +1,51 @@
+pocket_sequence: false # false  # true
+cross_attention: false
+encoder_Train:
+  HGNN: true            # false # true # Whether to use HGNN
+encoder_HGNN:             # These parameters do not change
+  amino_hyperedge: true       # Hyperedges with amino acids as nodes
+  first_hyperedge: true       # First set of hyperedges
+  W_matrix: false            # Edge weight diagonal matrix
+HGNN_first_hyperedge:       # These parameters do not change
+  space_edge: true        # Spatial hyperedges # First set of hyperedges
+  knn_edge: true      # Sequence hyperedges # First set of hyperedges
+  num_features: 31        # Node features
+  hidden_size: 256
+  out_size: 128
+  W_matrix: false
+features_to_use:   
+- x
+- y
+- z
+- r
+- theta
+- phi
+- hydrophobicity  
+- binding_probability 
+pocket_electrostatic: true  
+hide_dim: 256
+
+surface_feature: true
+surface_encoder:
+  first_subsampling_dl: 1.5
+  conv_radius: 2.5
+  in_feats_dim: 16
+  first_feats_dim: 256
+  num_layers: 3
+  num_kernel_points: 15
+  KP_extent: 1.2
+  batch_norm_momentum: 0.02
+  use_batch_norm: True
+  fixed_kernel_points: center
+  KP_influence: linear
+  modulated: False
+  in_points_dim: 3
+  hide_dim: 256
+
+  # Network Structure Configuration (architectures)
+  architectures:
+    - "simple" # First layer: simple KPConv convolution block
+    - "simple_strided" # Second layer: downsample simple convolution block
+    - "resnetb" # Third layer: ResNet bottleneck block
+    - "resnetb_strided" # Fourth layer: downsample ResNet block
+    - "resnetb" # Fifth layer: ResNet bottleneck block

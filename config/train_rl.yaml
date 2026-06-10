@@ -1,0 +1,14 @@
+result_dir: ./save/crossdocked/char/hgnn/2026_01_20_15/ 
+molecule_nums: 32 # Number of molecules sampled
+block_size: 119 # Number of layers, the maximum number of molecules, a parameter obtained from training
+top_k: 30 # Top k sampling, can be set to None
+seed: 666
+temperature: 1
+sample_num: 1 # Number of samples
+sample_type: True # True means random sampling, False means greedy sampling. Default is true
+training_mode: ppo # ppo or mix
+num_epochs: 1500
+out_dir: ./save_rl_xiaorong/
+learning_rate: 0.000001
+ppo_epsilon: 0.2 # PPO clipping parameter
+entropy_weight: 0.01 # Entropy regularization weight

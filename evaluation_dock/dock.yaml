@@ -1,0 +1,6 @@
+dataset: crossdocked # crossdocked  # pdbbind
+smiles_pdbqt: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/smiles_pdbqt/  # ./dock_file_save/crossdocked/2025_01_05_20_1341818784/smiles_pdbqt/ 
+out_path_sdf: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/out_sdf2/
+out_path_pdbqt: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/out_pdbqt2/
+save_prop_path: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/dock_result2/
+save_config: ./dock_file_save/rl/2026_05_16_23_1088538616_1500/

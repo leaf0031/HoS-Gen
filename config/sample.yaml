@@ -1,0 +1,9 @@
+result_dir: ./save/2026_05_16_23/
+molecule_nums: 300 # Number of molecules to sample
+block_size: 119 # Number of layers, maximum number of molecules, parameter obtained from training
+top_k: 30 # Top k sampling, can be set to None
+temperature: 1
+sample_num: 1 # Number of sampling times
+sample_type: True # True means random sampling, False means greedy sampling. Default is true
+case_study: False
+test_dir: ./data_crossdocked/test.yaml #./data_test/test.yaml # ./data_crossdocked/test.yaml #./data_pdbbind/test_64.yaml   #./data_crossdocked/test.yaml

@@ -1,0 +1,12 @@
+vocab: char # Tokenization # char,selfies
+vocab_path: ./data_crossdocked/char_merged_vocab.yaml #./data_pdbbind/vocab/char_merged_vocab.yaml # # Vocabulary ./data_crossdocked/char_merged_vocab.yaml ./data_pdbbind/vocab/char_merged_vocab.yaml
+smiles_dir: ./data_crossdocked/final_filter_train.yaml # ./data_pdbbind/pocket-smiles.yaml ./data_crossdocked/final_filter_train.yaml
+pocket_dir: /home/xxr/workspace/now/data/crossdocked_pocket10_mol/ # /home/zql/Data/v2020-other-PL/ /home/zql/Data/crossdock2020/crossdocked_pocket10/
+dataset: crossdocked # crossdocked pdbbind
+batch_size: 32 #8 #32 # If adjusted here, the pooling dimension of graph in the encoder also needs to be adjusted
+learning_rate: 0.000001 # Learning rate for AdamW optimizer
+num_epoch: 30 #50
+out_dir: ./save/
+seed: 666
+weight_decay: 0.001 # Initial weight for AdamW optimizer
+hide_dim: 256
