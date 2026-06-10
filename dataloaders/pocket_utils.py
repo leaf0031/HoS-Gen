@@ -41,7 +41,7 @@ def build_vector_features(amino_acids,pdb_file_path):
    
     model = list(amino_acids.items())[0][1][0].parent.parent
    
-    dssp = PDB.DSSP(model, pdb_file_path, dssp='/home/xxr/.conda/envs/hgnn_gpt/bin/mkdssp')
+    dssp = PDB.DSSP(model, pdb_file_path, dssp='/home/.conda/envs/HoS_Gen/bin/mkdssp')
 
     vertex_feature_vectors = {}
     
