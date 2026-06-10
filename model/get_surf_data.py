@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/xxr/workspace/now/mol-generation2-2/')
+sys.path.append('')
 import torch
 import yaml
 from tqdm import tqdm  
@@ -10,7 +10,7 @@ MODEL_NAME = 'bert-base'
 TOKENIZER_VOCAB = 'iupac'
 INPUT_FILE = 'case/7kzh_pocket2/7kzh_pocket2.yaml' 
 pocket_dir = 'case/7kzh_pocket2/'
-OUTPUT_DIR = './data/crossdocked_surface/'  
+OUTPUT_DIR = './data/surf/'  
 import os
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
