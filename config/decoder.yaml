@@ -1,5 +1,5 @@
 pretrain: true # true # false # Whether to use pretraining
-pretrained_model: pretrain_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/pdbbind/char/2024_12_27_19/val_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/crossdocked/char/2024_12_26_20/val_model.pt # /home/zql/Code/HGNN-GPT/GPT-last-new/save/chembl/crossdocked/char/2024_12_26_20/val_model.pt
+pretrained_model: pretrain_model.pt 
 vocab_size: 48 # 54 # 48 # 48 # Vocabulary size char: 54, 48 selfies: 109
 block_size: 121 # 121 #119
 n_embd: 256
