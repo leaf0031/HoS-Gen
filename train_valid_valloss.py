@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/xxr/workspace/now/HoS-Gen/')
+sys.path.append('')
 import yaml
 import os
 import random
