@@ -8,7 +8,7 @@ MODEL_NAME = 'bert-base'
 TOKENIZER_VOCAB = 'iupac'
 INPUT_FILE = 'case/7kzh_pocket2/7kzh_pocket2.yaml'  
 pocket_dir = 'case/7kzh_pocket2/'
-OUTPUT_DIR = '/home/xxr/workspace/now/data//crossdocked_elec/'  
+OUTPUT_DIR = '/home/data/elec/'  
 
 import os
 os.makedirs(OUTPUT_DIR, exist_ok=True)
